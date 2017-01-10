@@ -1,0 +1,52 @@
+{
+  "name": "vscode-prettier",
+  "displayName": "prettier",
+  "description": "Prettier is an opinionated JavaScript formatter inspired by refmt",
+  "version": "0.0.1",
+  "publisher": "rtorr",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "prettier configurtaion",
+      "properties": {
+        "prettier.options": {
+          "type": [
+            "object"
+          ],
+          "description": "A path to flow that is used for your project"
+        },
+        "prettier.updateOnSave": {
+          "type": "boolean",
+          "description": "Update your file with prettier on save"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0",
+    "mocha": "^2.3.3",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
+  },
+  "dependencies": {
+    "prettier": "0.0.3"
+  }
+}
