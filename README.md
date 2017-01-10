@@ -1,3 +1,10 @@
-# prettier README
+# vscode-prettier
 
-This is the README for your extension "prettier".
+`ext install vscode-prettier`
+
+.vscode/settings.json
+
+```
+"prettier.options" {}
+"prettier.updateOnSave": boolean
+```
