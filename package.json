@@ -1,8 +1,8 @@
 {
   "name": "vscode-prettier",
   "displayName": "prettier",
-  "description": "Prettier is an opinionated JavaScript formatter inspired by refmt",
-  "version": "1.0.1",
+  "description": "Deprecated, please use prettier-vscode",
+  "version": "1.0.2",
   "publisher": "rtorr",
   "engines": {
     "vscode": "^1.5.0"
